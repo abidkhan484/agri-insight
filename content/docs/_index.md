@@ -39,14 +39,14 @@ mindmap
       Phase 3: Growing Season
         Maintenance
         Pest Spray
-      Phase 4: Harvest & Evaluate
+      Phase 4: Harvest and Evaluate
         Data Collection
         Comparison
       Phase 5: Scale-Up
         Expand from Test Plot
     Advanced Technology
       Bot: Farm Scheduler
-      Alerts: Weather & Irrigation
+      Alerts: Weather and Irrigation
       Monitoring: IoT Soil Sensors
       Detection: AI Plant Disease
       AI Assistant: Local Knowledge
@@ -55,7 +55,7 @@ mindmap
       Soil: Jeevamrutha
       Pest: Neemastra, Agniastra
       Water: Drip Irrigation
-      Mulching: Straw & Grass
+      Mulching: Straw and Grass
     Assessment
       Soil Health: Earthworms, pH
       Climate: Bangladesh Adaptation
