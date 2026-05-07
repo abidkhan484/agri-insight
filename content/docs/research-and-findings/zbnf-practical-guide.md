@@ -1,3 +1,10 @@
+---
+title: "ZBNF Practical Guide"
+weight: 10
+date: 2025-01-14T15:11:42+06:00
+bookFlatSection: true
+---
+
 # 🌱 Zero Budget Natural Farming (ZBNF) — Complete Practical Guide
 
 ### Bangladesh-Adapted Edition | বাংলাদেশ উপযোগী সংস্করণ

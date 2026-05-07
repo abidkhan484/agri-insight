@@ -1,3 +1,10 @@
+---
+title: "Emergency Pest Response"
+weight: 10
+date: 2025-01-14T15:11:42+06:00
+bookFlatSection: true
+---
+
 # 🪲 ZBNF Pest Management — Full Lifecycle Guide
 
 > **No market pesticides. No chemicals. Only ZBNF on-farm formulations and ecological methods.**
@@ -6,7 +13,21 @@
 
 ## The ZBNF Pest Philosophy
 
-In ZBNF, pests are not "enemies to destroy" — they are signals of an imbalanced ecosystem. The goal is NOT to kill every insect but to:
+```mermaid
+graph TD
+    P[Prevention: Soil Health & Companion Planting] --> D[Detection: Weekly Observation]
+    D --> S{Severity?}
+    S -- Green --> NA[No Action: Ecosystem Balanced]
+    S -- Yellow --> L1[Neemastra: First Response]
+    S -- Red --> L2[Agniastra: Escalation]
+    S -- Severe --> L3[Brahmastra/Dashparni Ark: Heavy Artillery]
+    L1 --> R[Recovery: Rebuild Defenses]
+    L2 --> R
+    L3 --> R
+```
+
+In ZBNF, pests are not "enemies to destroy" — they are signals of an imbalanced ecosystem.
+ The goal is NOT to kill every insect but to:
 
 1. **Prevent** attacks through healthy soil and plant immunity
 2. **Detect** early through regular observation
@@ -215,4 +236,4 @@ After controlling the pest, rebuild your farm's defense:
 
 ## 🔗 Technology Integration (Free)
 
-See `docs/pest-management/tech-for-pest-control.md` for how to use free tech tools for pest detection and management.
+See `/docs/pest-and-disease-management/tech-for-pest-control` for how to use free tech tools for pest detection and management.

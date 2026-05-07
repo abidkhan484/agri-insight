@@ -1,4 +1,12 @@
-# Phase 4: Harvest & Evaluate (Month 5–6)
+---
+title: "Phase 4: Harvest & Evaluate"
+weight: 40
+date: 2025-01-14T15:11:42+06:00
+bookFlatSection: true
+---
+
+# Phase 4: Harvest & Evaluate (Month 4–5)
+
 
 > **Skill Level:** 🟢 Beginner to 🟡 Intermediate
 > **Time:** 2–4 weeks
@@ -95,7 +103,7 @@ ZBNF Advantage = ৳_____ (even if yield is slightly lower, cost savings often m
 
 - [ ] 🟢 Write a one-page summary of your comparison (yield, cost, soil, taste)
 - [ ] 🟡 Share at your farmer group meeting — show photos and numbers
-- [ ] 🟡 Post in the community network (see `docs/technology/h-community-farmer-network.md`)
+- [ ] 🟡 Post in the community network (see `/docs/advanced-technology/h-community-farmer-network`)
 - [ ] 🟢 Show results to skeptical family members — numbers speak louder than words
 - [ ] 🔴 If you're comfortable, share on social media or local agricultural forums — inspire others
 

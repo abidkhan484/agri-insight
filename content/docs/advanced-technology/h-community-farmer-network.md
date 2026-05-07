@@ -1,3 +1,10 @@
+---
+title: "Community Farmer Network"
+weight: 80
+date: 2025-01-14T15:11:42+06:00
+bookFlatSection: true
+---
+
 # 🌐 H. Community Farmer Network (Free Infrastructure)
 
 ## Overview
@@ -9,6 +16,20 @@ A platform connecting ZBNF farmers in Bangladesh for knowledge sharing, input ex
 ZBNF farmers in Bangladesh are isolated. They don't know who else is practicing ZBNF nearby, can't find desi cow dung sources, and have no community to troubleshoot problems with. A connected network accelerates adoption and reduces individual risk.
 
 ## Components
+
+```mermaid
+graph LR
+    F[Farmer] --> TB[Telegram Bot FAQ/Alerts]
+    F --> W[Knowledge Wiki Hugo]
+    F --> M[Farmer Map Leaflet]
+    F --> BC[WhatsApp Broadcast]
+    
+    subgraph Infrastructure
+    TB --- SQLite[(SQLite)]
+    W --- GH[GitHub Pages]
+    M --- SB[(Supabase)]
+    end
+```
 
 ### 1. Telegram Community Bot
 

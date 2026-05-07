@@ -8,6 +8,8 @@ bookFlatSection: true
 
 # Roadmap to Multilayer Farming
 
+> **Quick Links:** [Getting Started Guide](/docs/execution-phases/phase-1-preparation) | [ZBNF Practical Guide](/docs/research-and-findings/zbnf-practical-guide)
+
 ## 1. Assess Land and Climate Conditions
 - **[Evaluate Land](/docs/access-land-and-climate-condition/evaluate-land)**: Ensure the land is suitable for multilayer farming by analyzing soil type, fertility, and drainage.
 - **Analyze Climate**: Consider temperature, rainfall, and light intensity in your region as these factors influence crop compatibility.
@@ -79,6 +81,7 @@ Choose crops based on their growth habits, light requirements, and canopy struct
 ---
 
 ## 11. Use Advanced Technology (Optional)
+- **[Smart Farming Tools](/docs/advanced-technology/a-farm-scheduler-bot)**: Explore IoT sensors, Telegram bots, and AI assistants for farm management.
 - **Sensors and IoT Devices**: Monitor moisture, temperature, and nutrient levels.
 - **Data Analysis**: Use software to optimize planting schedules and predict yields.
 
@@ -87,5 +90,13 @@ Choose crops based on their growth habits, light requirements, and canopy struct
 ## 12. Evaluate and Adjust
 - Regularly assess the system’s performance.
 - Adjust crop selection, spacing, or farming techniques based on outcomes.
+
+
+
+- Regularly assess the system’s performance.
+- Adjust crop selection, spacing, or farming techniques based on outcomes.
+
+
+ing techniques based on outcomes.
 
 

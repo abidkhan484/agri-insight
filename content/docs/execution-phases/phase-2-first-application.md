@@ -1,4 +1,12 @@
-# Phase 2: First Application (Week 3–4)
+---
+title: "Phase 2: First Application"
+weight: 20
+date: 2025-01-14T15:11:42+06:00
+bookFlatSection: true
+---
+
+# Phase 2: First Application (Week 3)
+
 
 > **Skill Level:** 🟢 Beginner to 🟡 Intermediate
 > **Time:** 7–14 days
@@ -42,7 +50,7 @@
 
 - [ ] 🟢 Pour Jeevamrutha evenly on test plot soil
 - [ ] 🟢 Plant treated seeds or transplant dipped seedlings
-- [ ] 🟢 Follow intercropping layout (see `docs/multilayer-farming/`)
+- [ ] 🟢 Follow intercropping layout (see `/docs/crop-selection-and-layering/`)
 - [ ] 🟢 Light watering to settle soil around seeds
 
 ### Day 7–10: Establish Mulch

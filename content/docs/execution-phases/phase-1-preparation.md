@@ -1,3 +1,10 @@
+---
+title: "Phase 1: Preparation"
+weight: 10
+date: 2025-01-14T15:11:42+06:00
+bookFlatSection: true
+---
+
 # Phase 1: Preparation (Week 1–2)
 
 > **Skill Level:** 🟢 Beginner — No prior ZBNF experience needed
@@ -78,12 +85,12 @@ Before you apply a single drop of Jeevamrutha, you need to prepare. This phase i
 
 ### Day 12–14: Learn the Formulations
 
-- [ ] 🟢 Read the Jeevamrutha recipe thoroughly (see `docs/initial-findings.md` Section 2.1)
+- [ ] 🟢 Read the Jeevamrutha recipe thoroughly (see `/docs/research-and-findings/zbnf-practical-guide` Section 2.1)
 - [ ] 🟢 Read the Beejamrutha recipe (Section 2.2)
 - [ ] 🟢 Read the Neemastra recipe (Section 2.4)
 - [ ] 🟢 Watch 2–3 YouTube videos of actual preparation (search "Jeevamrutha preparation")
 - [ ] 🟡 If possible, visit a nearby farmer who already practices ZBNF or organic farming
-- [ ] 🟢 Plan your first planting: Choose 2–3 crops that grow well together (see `docs/multilayer-farming/`)
+- [ ] 🟢 Plan your first planting: Choose 2–3 crops that grow well together (see `/docs/crop-selection-and-layering/`)
 
 ---
 
@@ -106,7 +113,7 @@ Before you apply a single drop of Jeevamrutha, you need to prepare. This phase i
 
 - **Safest beginner combo**: Tomato + onion + coriander (leafy) + marigold (pest repellent)
 - **For rice farmers**: Start ZBNF on your vegetable plot first, not rice. Vegetables show results faster.
-- See Phase 2 and `docs/multilayer-farming/` for detailed crop combinations
+- See Phase 2 and `/docs/crop-selection-and-layering/bangladesh-adapted-combinations` for detailed crop combinations
 
 ### "My family thinks this is crazy"
 

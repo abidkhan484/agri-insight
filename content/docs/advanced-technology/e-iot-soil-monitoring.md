@@ -1,3 +1,10 @@
+---
+title: "IoT Soil Monitoring"
+weight: 50
+date: 2025-01-14T15:11:42+06:00
+bookFlatSection: true
+---
+
 # 🌡️ E. Low-Cost IoT Soil Monitoring
 
 ## Overview
@@ -35,19 +42,18 @@ ZBNF's Whapasa principle says soil needs both moisture AND air. But how wet is "
 
 ## How It Works
 
-```
-[Field Sensor (ESP32)]
-    ↓ reads every 30 min
-    ↓ sends via WiFi/MQTT
-[MQTT Broker (HiveMQ free)]
-    ↓
-[Node-RED (Raspberry Pi / laptop)]
-    ↓ processes data
-    ├── [Grafana Dashboard] — live soil moisture graphs
-    └── [Telegram Alert]
-         - Moisture < 30%: "🔴 Soil too dry on Plot A — irrigate today"
-         - Moisture > 80%: "🔵 Soil waterlogged on Plot A — stop irrigation, check drainage"
-         - Moisture 40-70%: "🟢 Whapasa state — soil is healthy, no action needed"
+```mermaid
+graph LR
+    ESP[Field Sensor ESP32] -- WiFi/MQTT --> Broker[MQTT Broker HiveMQ]
+    Broker --> NodeRED[Node-RED]
+    NodeRED --> Grafana[Grafana Dashboard]
+    NodeRED --> Telegram[Telegram Alert]
+    
+    subgraph Thresholds
+    Telegram -- "< 30%" --> Dry[🔴 Too dry]
+    Telegram -- "40-70%" --> Whapasa[🟢 Whapasa Ideal]
+    Telegram -- "> 80%" --> Wet[🔴 Waterlogged]
+    end
 ```
 
 ## Alert Thresholds (Configurable)

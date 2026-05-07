@@ -1,3 +1,10 @@
+---
+title: "Phase 5: Scale-Up"
+weight: 50
+date: 2025-01-14T15:11:42+06:00
+bookFlatSection: true
+---
+
 # Phase 5: Scale Up (Season 2+)
 
 > **Skill Level:** 🟡 Intermediate to 🔴 Advanced
@@ -69,7 +76,7 @@ You've proven ZBNF works on your test plot. Now systematically expand to your en
 - [ ] 🟡 Share resources: desi cow access, bulk buying of jaggery/flour, seed exchange
 - [ ] 🔴 Host a **field day** — invite other farmers to see your ZBNF plot, show soil comparison, taste the produce
 - [ ] 🔴 Connect with **DAE, BRAC, Proshika** — get institutional support, training, and potential funding
-- [ ] 🟡 Use the Community Farmer Network tool (see `docs/technology/h-community-farmer-network.md`)
+- [ ] 🟡 Use the Community Farmer Network tool (see `/docs/advanced-technology/h-community-farmer-network`)
 
 ---
 
@@ -111,3 +118,4 @@ Now that you have multiple seasons of experience, deploy the tech tools:
 | Scaling labor-intensive | Batch-produce Jeevamrutha (make larger quantities less often). Train family members. Use drip irrigation to reduce watering labor. |
 
 **✅ You are now a ZBNF practitioner. Keep observing, keep learning, keep growing.**
+**

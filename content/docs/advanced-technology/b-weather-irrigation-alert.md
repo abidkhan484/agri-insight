@@ -1,3 +1,10 @@
+---
+title: "Weather Irrigation Alert"
+weight: 20
+date: 2025-01-14T15:11:42+06:00
+bookFlatSection: true
+---
+
 # 🌦️ B. Weather-Based Smart Irrigation Alert
 
 ## Overview
@@ -30,20 +37,17 @@ Farmers often irrigate on a fixed schedule regardless of incoming rain. This was
 
 ## How It Works
 
-```
-[Daily 6 AM cron] →
-  Fetch: https://api.open-meteo.com/v1/forecast
-    ?latitude=23.8&longitude=90.4
-    &daily=precipitation_sum,temperature_2m_max
-    &timezone=Asia/Dhaka
-  →
-  If precipitation_sum[today or tomorrow] > 5mm:
-    Send: "🌧️ Skip irrigation — 12mm rain expected tomorrow."
-  Else:
-    Send: "☀️ No rain expected. Irrigate if soil feels dry 2 inches below surface."
-  →
-  If temperature_2m_max > 38:
-    Send: "🔥 Extreme heat — add extra mulch layer, water before 7 AM only."
+```mermaid
+graph TD
+    Cron[Daily 6 AM Cron] --> Fetch[Fetch Open-Meteo API]
+    Fetch --> Decision{Precipitation > 5mm?}
+    Decision -- Yes --> AlertSkip["🌧️ Skip irrigation alert"]
+    Decision -- No --> AlertWait["☀️ No rain. Irrigate if dry."]
+    Fetch --> Temp{Temp > 38°C?}
+    Temp -- Yes --> AlertHeat["🔥 Extreme heat alert"]
+    AlertSkip --> Telegram[Send to Telegram Bot]
+    AlertWait --> Telegram
+    AlertHeat --> Telegram
 ```
 
 ## Key Design Decisions

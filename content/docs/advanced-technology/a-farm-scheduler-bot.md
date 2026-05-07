@@ -1,3 +1,10 @@
+---
+title: "Farm Scheduler Bot"
+weight: 10
+date: 2025-01-14T15:11:42+06:00
+bookFlatSection: true
+---
+
 # 🔔 A. Farm Scheduler & Reminder System
 
 ## Overview
@@ -30,13 +37,23 @@ Farmers forget recurring tasks like applying Jeevamrutha every 15 days or checki
 
 ## How It Works
 
-```
-Farmer → /register plot_name area_in_decimal crop_name start_date
-Bot → Stores plot info in SQLite
-Bot → Creates recurring cron jobs:
-  - Every 15 days: "🌿 Apply Jeevamrutha to [plot]. Mix X kg dung for Y decimals."
-  - Every 7 days: "🍂 Check mulch on [plot]. Replenish if below 3 inches."
-  - Every 14 days: "🪲 Preventive Neemastra spray due for [plot]."
+```mermaid
+sequenceDiagram
+    participant F as Farmer
+    participant B as Bot
+    participant D as SQLite DB
+    participant C as Cron Job
+    
+    F->>B: /register plot_name area crop date
+    B->>D: Store plot info
+    B-->>F: Registration Success
+    
+    Loop Every 15 Days
+        C->>B: Trigger Jeevamrutha Reminder
+        B->>D: Get Plot Details
+        B->>B: Calculate Batch Quantities
+        B->>F: "🌿 Apply Jeevamrutha to [plot]. Mix X kg dung..."
+    End
 ```
 
 ## Key Design Decisions

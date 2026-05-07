@@ -1,3 +1,10 @@
+---
+title: "Farm Record Tracker"
+weight: 40
+date: 2025-01-14T15:11:42+06:00
+bookFlatSection: true
+---
+
 # 📊 D. Farm Record Keeping & Yield Tracker
 
 ## Overview
@@ -38,30 +45,37 @@ Farmers switch to ZBNF but can't quantify their savings. Without records, they c
 
 ## Data Model (for PWA option)
 
-```
-Plot {
-  id, name, area_decimal, soil_type, start_date, current_crop[]
-}
-
-InputLog {
-  id, plot_id, date, type (jeevamrutha|beejamrutha|neemastra|agniastra|mulch|other),
-  quantity, materials_used, cost_bdt, notes
-}
-
-Observation {
-  id, plot_id, date, earthworm_count, soil_moisture (dry|moist|wet),
-  pest_sighting (none|low|medium|high), pest_type, weather, notes, photo_url
-}
-
-Harvest {
-  id, plot_id, date, crop, quantity_kg, area_decimal, yield_per_decimal,
-  market_price_bdt, revenue_bdt
-}
-
-SeasonSummary {
-  id, plot_id, season, year, total_input_cost, total_revenue,
-  total_yield_kg, comparison_type (zbnf|chemical)
-}
+```mermaid
+erDiagram
+    Plot ||--o{ InputLog : has
+    Plot ||--o{ Observation : has
+    Plot ||--o{ Harvest : has
+    Plot {
+        string id
+        string name
+        float area_decimal
+        string soil_type
+    }
+    InputLog {
+        string id
+        date date
+        string type
+        float quantity
+        float cost_bdt
+    }
+    Observation {
+        string id
+        date date
+        int earthworm_count
+        string pest_sighting
+    }
+    Harvest {
+        string id
+        date date
+        string crop
+        float quantity_kg
+        float revenue_bdt
+    }
 ```
 
 ## Key Reports to Generate

@@ -1,3 +1,10 @@
+---
+title: "Plant Disease Detection"
+weight: 30
+date: 2025-01-14T15:11:42+06:00
+bookFlatSection: true
+---
+
 # 🌱 C. Plant Disease Detection — On-Device, No API Cost
 
 ## Overview
@@ -32,14 +39,14 @@ Farmers see yellow spots, wilting, or unusual leaf patterns but don't know what 
 
 ## How the On-Device Version Works
 
-```
-1. Train a CNN classifier on PlantVillage dataset (laptop, one-time)
-   → Model accuracy: ~95% on common diseases
-2. Convert model to TFLite / TF.js format
-3. Bundle model file (~5-15 MB) into the PWA
-4. User opens PWA → takes photo → model runs in-browser
-5. Display: "Rice Blast detected — Apply Neemastra + increase Jeevamrutha frequency"
-6. Treatment suggestions are hardcoded ZBNF remedies mapped to each disease class
+```mermaid
+graph TD
+    Train[Train CNN Classifier on PlantVillage Dataset] --> Convert[Convert to TFLite / TF.js format]
+    Convert --> Bundle[Bundle model file 5-15 MB into PWA]
+    Bundle --> User[User opens PWA & takes photo]
+    User --> Inference[Model runs in-browser]
+    Inference --> Result[Display Disease & ZBNF Treatment]
+    Result --> Action[Rice Blast detected - Apply Neemastra]
 ```
 
 ## Disease → ZBNF Treatment Mapping (Example)

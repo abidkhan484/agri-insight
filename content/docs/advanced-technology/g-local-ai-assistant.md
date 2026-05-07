@@ -1,3 +1,10 @@
+---
+title: "Local AI Assistant"
+weight: 70
+date: 2025-01-14T15:11:42+06:00
+bookFlatSection: true
+---
+
 # 🤖 G. Local AI Assistant — No API Key, No Cost
 
 ## Overview
@@ -10,20 +17,14 @@ Farmers have specific, contextual questions ("My rice leaves are turning yellow 
 
 ## How It Works (RAG — Retrieval Augmented Generation)
 
-```
-[Your ZBNF documents (markdown/text files)]
-    ↓ one-time indexing
-[Vector database (ChromaDB / FAISS — free, local)]
-    ↓
-[User asks: "ধানের পাতা হলুদ হচ্ছে কেন?"]
-    ↓
-[RAG retrieves relevant ZBNF paragraphs from your docs]
-    ↓
-[Local LLM (Llama 3 / Mistral / Gemma 2 via Ollama)]
-    ↓
-[Answer: "This is likely nitrogen deficiency. In ZBNF, increase
-  Jeevamrutha application frequency to every 7 days instead of 15.
-  Also apply cow urine spray (1:10 dilution) as foliar feed."]
+```mermaid
+graph TD
+    Docs[ZBNF Markdown Docs] --> Index[Indexing Engine]
+    Index --> VectorDB[(Local Vector Database)]
+    User[Farmer Query: Bangla] --> RAG[RAG Retrieval]
+    VectorDB --> RAG
+    RAG --> LLM[Local LLM Ollama]
+    LLM --> Answer[Answer: ZBNF Suggestion]
 ```
 
 ## Tech Stack
@@ -52,11 +53,11 @@ Feed these documents to the RAG system:
 
 ```
 docs/
-├── initial-findings.md          # Core ZBNF principles and methods
-├── pest-management/             # All pest control knowledge
-├── multilayer-farming/          # Crop combinations and layout
-├── phases/                      # Season-by-season guidance
-└── technology/                  # Tech tool documentation
+├── research-and-findings/       # Core ZBNF principles and methods
+├── pest-and-disease-management/ # All pest control knowledge
+├── crop-selection-and-layering/ # Crop combinations and layout
+├── execution-phases/            # Season-by-season guidance
+└── advanced-technology/         # Tech tool documentation
 ```
 
 The RAG system chunks these documents, creates embeddings, and retrieves relevant sections when a farmer asks a question.

@@ -1,3 +1,10 @@
+---
+title: Akash Chaurasia's Technique
+weight: 10
+date: 2025-01-14T15:11:42+06:00
+bookFlatSection: true
+---
+
 # 🌿 Akash Chaurasia's Multi-Layer Farming Technique
 
 > **Source:** Akash Chaurasia — Organic farmer from Sagar, Madhya Pradesh, India. Recognized nationally for developing a practical, low-cost multilayer farming model for small landholders.
@@ -14,15 +21,21 @@ Akash Chaurasia is an innovative Indian farmer from Sagar district, Madhya Prade
 
 A natural forest has multiple layers — ground cover, shrubs, mid-height trees, and tall canopy. Each layer uses a different slice of sunlight, soil depth, and air space. Akash's model replicates this in a farm setting:
 
-```
-Layer 4 (Canopy/Tree):    🌳 Papaya / Mango / Sapota
-                           ↕ ~10-15 ft
-Layer 3 (Creeper/Vine):   🌿 Bitter gourd / Ivy gourd / Ridge gourd
-                           ↕ ~6-7 ft (bamboo structure)
-Layer 2 (Surface/Ground):  🥬 Spinach / Fenugreek / Coriander
-                           ↕ ~1-2 ft
-Layer 1 (Underground):     🫚 Ginger / Turmeric
-                           ↕ below soil surface
+```mermaid
+graph TD
+    subgraph "Layer 4: Canopy (10-15 ft)"
+        L4[🌳 Papaya / Mango / Sapota]
+    end
+    subgraph "Layer 3: Creeper (6-7 ft)"
+        L3[🌿 Bitter gourd / Ivy gourd / Ridge gourd]
+    end
+    subgraph "Layer 2: Surface (1-2 ft)"
+        L2[🥬 Spinach / Fenugreek / Coriander]
+    end
+    subgraph "Layer 1: Underground (Below Soil)"
+        L1[🫚 Ginger / Turmeric]
+    end
+    L4 --- L3 --- L2 --- L1
 ```
 
 ---

@@ -1,3 +1,10 @@
+---
+title: Bangladesh Adapted Combinations
+weight: 20
+date: 2025-01-14T15:11:42+06:00
+bookFlatSection: true
+---
+
 # 🇧🇩 Multi-Layer Farming — Bangladesh Adapted Combinations
 
 > Adapted from Akash Chaurasia's 4-layer technique for Bangladesh's tropical climate, soil types, and locally available crops.
@@ -19,17 +26,12 @@
 
 ## Bangladesh-Adapted Layer Model
 
-```
-Layer 5 (Tall Canopy):   🌴 Coconut / Areca nut / Mango [BD addition]
-                          ↕ 15-30 ft
-Layer 4 (Medium Tree):   🌳 Papaya / Guava / Drumstick (সজনে)
-                          ↕ 8-12 ft
-Layer 3 (Vine/Creeper):  🌿 Bitter gourd / Bottle gourd / Country bean (শিম)
-                          ↕ 6-7 ft (bamboo structure)
-Layer 2 (Ground):         🥬 Red amaranth / Spinach / Coriander / Malabar spinach
-                          ↕ 1-2 ft
-Layer 1 (Underground):    🫚 Ginger / Turmeric / Taro (কচু)
-                          ↕ below surface
+```mermaid
+graph BT
+    L1[🫚 Layer 1: Underground<br/>Ginger / Turmeric / Taro] --> L2[🥬 Layer 2: Ground<br/>Red amaranth / Spinach / Coriander]
+    L2 --> L3[🌿 Layer 3: Vine<br/>Bitter gourd / Bottle gourd / Country bean]
+    L3 --> L4[🌳 Layer 4: Medium Tree<br/>Papaya / Guava / Drumstick]
+    L4 --> L5[🌴 Layer 5: Tall Canopy<br/>Coconut / Areca nut / Mango]
 ```
 
 **Bangladesh adds a 5th layer** — tall palms/trees that don't exist in Akash's drier MP climate but thrive in BD's tropics.
@@ -106,36 +108,26 @@ Best for: Southern Bangladesh (Khulna, Bagerhat), pond embankments
 
 ---
 
-## Layout Diagram (Top View)
+## Layout Diagram (Side View)
 
-```
-┌──────────────────────────────────────────┐
-│  🌴          🌴          🌴          🌴  │  ← Tall trees (coconut/mango) at corners
-│    ┌──────────────────────────────┐      │
-│    │  🌿 Vine crops on bamboo    │      │
-│    │  ┌──────────────────────┐   │      │
-│    │  │ 🥬🥬🥬 Leafy greens 🥬│   │      │
-│    │  │ 🫚🫚🫚 Root crops   🫚│   │      │
-│    │  └──────────────────────┘   │      │
-│    │  🌳 Papaya    🌳 Papaya     │      │
-│    └──────────────────────────────┘      │
-│  🌻 Border: Marigold + Basil (pest repellent) │
-└──────────────────────────────────────────┘
-```
-
-### Side View (Cross Section)
-
-```
-     🌴 Coconut (30 ft)
-      │
-      │    🌳 Papaya (10 ft)
-      │     │
-      │     │   ╔══════════╗ ← Bamboo frame (6.5 ft)
-      │     │   ║ 🌿 Vines ║
-      │     │   ╚══════════╝
-      │     │    🥬🥬🥬 Leafy greens (1 ft)
-      │     │    🫚🫚🫚 Root crops (underground)
-    ──┴─────┴────────────────── Soil level
+```mermaid
+graph TD
+    subgraph "Sky"
+        C1[🌴 Coconut 30ft]
+    end
+    subgraph "Upper Story"
+        P1[🌳 Papaya 10ft]
+    end
+    subgraph "Trellis Layer"
+        V1[🌿 Vines 6.5ft]
+    end
+    subgraph "Ground Story"
+        G1[🥬 Leafy Greens 1ft]
+    end
+    subgraph "Underground"
+        U1[🫚 Root Crops]
+    end
+    C1 --- P1 --- V1 --- G1 --- U1
 ```
 
 ---
@@ -199,4 +191,4 @@ One-time cost. Bamboo structure lasts 2–3 years with basic maintenance.
 - [VOA News — "Bangladeshi Farmers Turn to Vertical Gardens"](https://www.voanews.com)
 - [GCA — "Floating Gardens: Bangladesh's Climate Adaptation"](https://gca.org)
 - [Vikaspedia — "Multi-tier Cropping Systems"](https://vikaspedia.in)
-- Adapted from [Akash Chaurasia's original model](./akash-chaurasia-technique.md)
+- Adapted from [Akash Chaurasia's original model](../crop-selection-and-layering/akash-chaurasia-technique.md)

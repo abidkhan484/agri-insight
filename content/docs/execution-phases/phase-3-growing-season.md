@@ -1,3 +1,10 @@
+---
+title: "Phase 3: Growing Season"
+weight: 30
+date: 2025-01-14T15:11:42+06:00
+bookFlatSection: true
+---
+
 # Phase 3: Growing Season (Month 2–4)
 
 > **Skill Level:** 🟡 Intermediate
@@ -46,14 +53,14 @@ Your crops are growing. Now you maintain the ZBNF system — regular Jeevamrutha
 
 ## Pest Response Protocol (ZBNF Only — No Market Inputs)
 
-> See `docs/pest-management/emergency-pest-response.md` for the full guide.
+> See `/docs/pest-and-disease-management/emergency-pest-response` for the full guide.
 
 | Severity | Action |
 |---|---|
 | 🟢 No pests / very few | Continue preventive Neemastra every 14 days |
 | 🟡 Moderate (visible damage on 10-20% plants) | Apply Neemastra immediately + increase frequency to every 7 days |
 | 🔴 Heavy (widespread damage >30% plants) | Apply **Agniastra** (chilli + garlic + tobacco + neem in cow urine, boiled). See pest-management docs for recipe. |
-| 🔴🔴 Severe / critical | Apply **Brahmastra** (5-leaf formula). If still uncontrolled, apply Dashparni Ark (10-leaf extract). Consult `docs/pest-management/` |
+| 🔴🔴 Severe / critical | Apply **Brahmastra** (5-leaf formula). If still uncontrolled, apply Dashparni Ark (10-leaf extract). Consult `/docs/pest-and-disease-management/` |
 
 ---
 

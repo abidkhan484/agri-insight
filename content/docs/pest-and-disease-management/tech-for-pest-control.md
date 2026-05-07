@@ -1,3 +1,10 @@
+---
+title: "Tech for Pest Control"
+weight: 20
+date: 2025-01-14T15:11:42+06:00
+bookFlatSection: true
+---
+
 # 💻 Technology for Pest Control (Free Tools)
 
 > All tools here are free to build and use. No AI API keys. No paid subscriptions.
@@ -91,7 +98,7 @@
 **What:** Automated light trap that turns on at sunset, attracts night-flying pests (moths, stem borers), and optionally counts them.
 
 **Hardware:**
-- ESP32 (same one from soil monitoring — see `docs/technology/e-iot-soil-monitoring.md`)
+- ESP32 (same one from soil monitoring — see `/docs/advanced-technology/e-iot-soil-monitoring`)
 - LED bulb (white or UV)
 - Water basin underneath
 - Light-dependent resistor (LDR) to auto-detect sunset
