@@ -10,11 +10,13 @@ Welcome to the **Insight Multilayer Farming** documentation. This roadmap provid
 
 ## 🗺️ Project Mindmap
 
+The following mindmap summarizes the entire journey, from core philosophy and vertical layering to the 12-step execution roadmap and advanced technological integrations.
+
 ```mermaid
 mindmap
   root((Insight: Multilayer Farming))
     Core Philosophy
-      Zero-Budget Natural Farming (ZBNF)
+      Zero-Budget Natural Farming ZBNF
       Mimic Natural Forest
       Maximize Vertical Space
       Low Capital / Organic Inputs
@@ -29,37 +31,37 @@ mindmap
         Trees: Papaya, Mango
       Support
         Bamboo Structure and Netting
-    5-Phase Roadmap
-      Phase 1: Preparation
-        Source Desi Cow
-        Stop Chemicals
-      Phase 2: First Application
-        Jeevamrutha
-        Beejamrutha
-      Phase 3: Growing Season
-        Maintenance
-        Pest Spray
-      Phase 4: Harvest and Evaluate
-        Data Collection
-        Comparison
-      Phase 5: Scale-Up
-        Expand from Test Plot
-    Advanced Technology
+    12-Step Journey
+      1. Assess Land and Climate
+      2. Select Layered Crops
+      3. Plan Layout and Spacing
+      4. Prepare Soil Organic
+      5. Planting Practices
+      6. Irrigation Systems
+      7. Pest and Disease Mgmt
+      8. Light and Shade Mgmt
+      9. Maintain Fertility
+      10. Strategic Harvesting
+      11. Tech Tools Optional
+      12. Evaluate and Adjust
+    Formulations ZBNF
+      Jeevamrutha Soil Energizer
+      Beejamrutha Seed Treatment
+      Neemastra Pest Control
+      Agniastra Emergency Pest
+      Mulching Soil Cover
+    Smart Technology
       Bot: Farm Scheduler
       Alerts: Weather and Irrigation
       Monitoring: IoT Soil Sensors
       Detection: AI Plant Disease
       AI Assistant: Local Knowledge
       Network: Community Farmer App
-    Resource Management
-      Soil: Jeevamrutha
-      Pest: Neemastra, Agniastra
-      Water: Drip Irrigation
-      Mulching: Straw and Grass
-    Assessment
+    Assessment KPIs
       Soil Health: Earthworms, pH
-      Climate: Bangladesh Adaptation
+      Yield: Vertical Multiplier
       Economy: Cost Reduction
+      Environment: Zero Chemicals
 ```
 
 ## 🚀 How to Use This Roadmap
@@ -72,4 +74,4 @@ mindmap
 
 ---
 
-_This project is adapted for the Bangladesh context, focusing on local crop varieties and affordable technology._
+*This project is adapted for the Bangladesh context, focusing on local crop varieties and affordable technology.*

@@ -19,7 +19,7 @@ The following mindmap summarizes the entire journey, from land assessment and co
 mindmap
   root((Insight: Multilayer Farming))
     Core Philosophy
-      Zero-Budget Natural Farming (ZBNF)
+      Zero-Budget Natural Farming ZBNF
       Mimic Natural Forest
       Maximize Vertical Space
       Low Capital / Organic Inputs
