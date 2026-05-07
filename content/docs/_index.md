@@ -28,7 +28,7 @@ mindmap
       Layer 4: Canopy
         Trees: Papaya, Mango
       Support
-        Bamboo Structure & Netting
+        Bamboo Structure and Netting
     5-Phase Roadmap
       Phase 1: Preparation
         Source Desi Cow
@@ -72,4 +72,4 @@ mindmap
 
 ---
 
-*This project is adapted for the Bangladesh context, focusing on local crop varieties and affordable technology.*
+_This project is adapted for the Bangladesh context, focusing on local crop varieties and affordable technology._
